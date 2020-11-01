@@ -47,12 +47,12 @@ function renderAvatar(user) {
         // 渲染图片
         $('.layui-nav-img').attr('src', user.user_pic).show()
         // 让文字头像隐藏
-        $('text-avatar').hide()
+        $('.text-avatar').hide()
     } else {
         // 2.渲染文本
         $('.layui-nav-img').hide()
         // toUpperCase()将文本大写
         var first = name[0].toUpperCase();
-        $('text-avatar').html(first).show()
+        $('.text-avatar').html(first).show()
     }
 }
