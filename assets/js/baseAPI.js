@@ -13,7 +13,6 @@ $.ajaxPrefilter(function (options) {
 
     options.complete = function (res) {
         // 成功or失败都会执行这里
-        console.log(res);
         if (res.responseJSON.status === 1 && res.responseJSON.message === '身份认证失败！') {
             //    清空本地存储中的 token 
             localStorage.removeItem('token')
