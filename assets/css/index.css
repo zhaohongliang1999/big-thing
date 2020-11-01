@@ -17,3 +17,39 @@ iframe {
 .layui-body {
     overflow: hidden;
 }
+
+a {
+    transition: none!important;
+}
+
+.userinfo {
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 12px;
+    /* 不让用户选中 */
+    user-select: none;
+}
+
+.layui-side-scroll .userinfo {
+    border-bottom: 1px solid #282b33;
+}
+
+.layui-nav-img {
+    width: 40px;
+    height: 40px;
+}
+.text-avatar {
+    display: inline-block;
+    position: relative;
+    top: 4px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #409488;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #fff;  
+    margin-right: 10px;
+}
