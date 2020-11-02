@@ -24,7 +24,8 @@ $(function () {
             return layer.msg('请选择照片！')
         }
         var newImgURL = URL.createObjectURL(filelist[0]);
-        $image.cropper('destroy').attr('str', newImgURL).cropper(options)
+        $image.cropper('destroy').attr('src', newImgURL).cropper(options)
+        // debugger;
     })
     //  将剪切后的图片上传到服务器
     $('#btnUpload').on('click', function () {
@@ -41,7 +42,7 @@ $(function () {
             method: 'POST',
             url: '/my/update/avatar',
             data: {
-                avatat: dataURL
+                avatar: dataURL
             },
             success: function (res) {
                 if (res.status !== 0) {
